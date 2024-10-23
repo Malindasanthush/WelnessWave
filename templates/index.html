@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Prediction</title>
+    <link rel="stylesheet" href="/static/css/css.css">
+    <link rel="stylesheet" href="/static/css/newCss.css">
+    <link rel="shortcut icon" type="image/icon" href="/static/img/png-transparent-red-heart-with-beat-illustration-heart-electrocardiography-pulse-heartbeat-cartoon-love-cartoon-character-other-removebg-preview.png"/>
+</head>
+<style>#snapshotButton{
+    margin-left: 50px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 180px;
+
+}
+#snapshotButton:hover{
+    background-color: #218838;
+}</style>
+<body >
+    <div class="snap" style="margin-top: -800px;">
+        <button id="snapshotButton"><i class="fa fa-download"></i>  Download prediction result</button></div>
+    <div class="prediction" style="margin-left: 100px;" >
+        <h1 class="title text-bold" style="margin-left: 200px; font-weight: bold;">Prediction</h1>
+    <form action="/predict" method="post" style="margin-left: 150px;" class="bg-dark">
+        <label for="height" class="text-light">Height (cm):</label>
+        <input type="number" id="height" name="height" step="any" required><br><br>
+        
+        <label for="weight" class="text-light" >Weight (kg):</label>
+        <input type="number" id="weight" name="weight" step="any" required><br><br>
+
+        <label for="gender" class="text-light">Gender:</label><br>
+        <div class="gender" style="display: flex;">
+        <input type="radio" id="male" name="gender" value="1" required>
+        <label for="male" class="text-light">Male</label>
+        <input type="radio" id="female" name="gender" value="0" required>
+        <label for="female" class="text-light">Female</label><br><br>
+    </div>
+        <input type="submit" value="Predict">
+    </form>
+   <div class="result" style="width: 1000px; height: 400px; margin-left: -200px;">
+    <h2 id="result" class="result " style="margin-left:200px; font-size: 30px; font-weight: bold;">{{ result }}</h2>
+
+</div>
+</body>
+
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+<script>
+    document.getElementById('snapshotButton').addEventListener('click', function() {
+        html2canvas(document.body, {
+            onrendered: function(canvas) {
+                // Convert the canvas to an image
+                var img = canvas.toDataURL('image/png');
+                // Create a new link element
+                var link = document.createElement('a');
+                // Set the download attribute with a filename
+                link.download = 'snapshot.png';
+                // Set the href to the image data URL
+                link.href = img;
+                // Simulate a click on the link to trigger the download
+                link.click();
+            }
+        });
+    });
+</script>
