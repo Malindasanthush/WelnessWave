@@ -1,0 +1,243 @@
+
+.container {
+  margin-left: 0px;
+  place-items: start;
+  width: 400px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0 5px;
+}
+
+input[type="number"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.radio-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 160px;
+}
+
+button[type="reset"] {
+  background-color: #dc3545;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+button[type="reset"]:hover {
+  background-color: #c82333;
+}
+
+#results {
+  margin-top: 20px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+#results p {
+  margin: 5px 0;
+}
+.bmr{
+  width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+.bmrs{
+  width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+.bmrf{
+  width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+.container-fluid.form {
+    display: flex !important;
+justify-content: space-between;
+}
+.Workout-plan{
+  width: 800px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: auto;
+}
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background-color: #007bff;
+  color: #fff;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  font-size: 1.1em;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+.img {
+  margin-left: 200px; /* Reduce space between the image and the text */
+  vertical-align: middle; /* Align image vertically with text */
+}
+.work{
+  margin-right: -30px;
+  text-align: center;
+}
+.nutri{
+  width: 809px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-right: 20px;
+  height: auto;
+}
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background-color: #007bff;
+  color: #fff;
+}
+
+th, td {
+  padding: 5px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  font-size: 1.1em;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+.img {
+  margin-left: 200px; /* Reduce space between the image and the text */
+  vertical-align: middle; /* Align image vertically with text */
+}
+.csh{
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.boxes{display: flex;
+  justify-content: space-between;}
+.toys{
+  height: 50vh;
+  width: 400px;
+
+}
+
+.collapse.in {
+  display: block;
+}
+.collapsible-content {
+  padding: 15px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+}
+.clickable {
+  cursor: pointer;
+}
+
+.collapsible-content {
+  padding: 15px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+}
+.img {
+  max-width: 300px; /* Set your desired maximum width */
+  max-height: 300px; /* Set your desired maximum height */
+height: 300px;
+  width: 300px;
+  margin-left: 0px;
+}
+.details{
+  width: 375px;
+  height: 300px;
+
+  margin-left: 30px;
+}
+.console{
+  display: flex;
+  height: 52vh;
+  width: 720px;
+
+}
+.imagediv{
+  width: 300px;
+  height: 300px;
+  margin-left: 0px;
+}
+.para-1{
+
+  height: 130px;
+  margin-top: 0px;
+}
+.para-2{
+
+  height: 100px;
+  margin-top: 5px;
+}
+.para-3{
+
+  height: 75px;
+  margin-top: 20px;
+}
+

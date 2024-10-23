@@ -1,0 +1,64 @@
+
+.sidebar-brand-text{
+    font-family: 'Roboto Slab', sans-serif !important;
+    font-weight: 700 !important;
+}
+.img-fluid{
+    width: 600px !important;
+    height: 600px !important;
+}
+.wellness{
+    justify-content: center;
+}
+.xy{
+
+    display:flex;
+    margin-left: 100px;
+    width: 780px;
+}
+#snapshotButton{
+    margin-left: 50px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 180px;
+
+}
+#snapshotButton:hover{
+    background-color: #218838;
+}
+.MAlinda{
+    display: flex;
+}
+#Logout {
+    margin-left: 100px;
+
+}
+.feedback{
+    display: flex;
+    gap: 3px;
+margin-top: -40px;
+    margin-left: -30px;
+
+
+}
+#feed{
+    margin-left: 500px;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+
+
+}
+.well{
+    display: flex;
+margin-top: -10px;
+    width: 1000px;
+    margin-left: 100px;
+}
